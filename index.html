@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RED Sauce REI — We Buy Real Estate on Terms</title>
+<meta name="description" content="RED Sauce REI buys residential and commercial real estate with creative, seller-friendly financing. Deal hunters: bring us deals, we underwrite and close, you get paid.">
+<style>
+  :root{
+    --red:#c0311a; --red-dark:#8f2413; --ink:#1c1410; --paper:#faf6f2;
+    --cream:#f3ece4; --muted:#6b5d52; --line:#e2d7cb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{background:var(--ink);color:var(--paper)}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{font-weight:800;font-size:1.15rem;letter-spacing:.5px;color:var(--paper);text-decoration:none}
+  .logo span{color:#ff6a4d}
+  nav .links a{color:#cfc4ba;text-decoration:none;margin-left:22px;font-size:.92rem}
+  nav .links a:hover{color:#fff}
+  .hero{background:var(--ink);color:var(--paper);padding:72px 0 84px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;bottom:-2px;left:0;right:0;height:60px;background:var(--paper);clip-path:polygon(0 100%,100% 100%,100% 0)}
+  .hero h1{font-size:clamp(2.1rem,5.5vw,3.4rem);line-height:1.12;max-width:15em}
+  .hero h1 em{font-style:normal;color:#ff6a4d}
+  .hero p{margin-top:20px;max-width:34em;font-size:1.12rem;color:#d8cec5}
+  .cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .12s ease, background .12s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark)}
+  .btn-ghost{border:2px solid #5a4c42;color:var(--paper)}
+  .btn-ghost:hover{border-color:#8a7a6e}
+  section{padding:64px 0}
+  .kicker{color:var(--red);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+  h2{font-size:clamp(1.5rem,3.4vw,2.1rem);margin-top:10px;line-height:1.2}
+  .lead{margin-top:14px;color:var(--muted);max-width:40em;font-size:1.05rem}
+  .cards{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}
+  .card h3{font-size:1.05rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .card .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;align-items:center;justify-content:center;font-weight:800;margin-bottom:14px;font-size:.95rem}
+  .band{background:var(--cream)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  ul.checks{margin-top:18px;list-style:none}
+  ul.checks li{padding-left:30px;position:relative;margin-bottom:12px;color:#3d332b}
+  ul.checks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--red);font-weight:800}
+  .quotebox{background:var(--ink);color:#e9e0d8;border-radius:10px;padding:28px;font-size:1.05rem}
+  .quotebox strong{color:#ff6a4d}
+  .contact{background:var(--ink);color:var(--paper);text-align:center}
+  .contact .lead{margin-left:auto;margin-right:auto;color:#cfc4ba}
+  .contact a.mail{color:#ff6a4d;font-weight:700;text-decoration:none;font-size:1.2rem}
+  footer{background:#120d0a;color:#8a7a6e;padding:26px 0;font-size:.85rem;text-align:center}
+  footer a{color:#b0a195;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="sans">
+      <a class="logo" href="#top">RED <span>SAUCE</span> REI</a>
+      <div class="links">
+        <a href="#how">How It Works</a>
+        <a href="#hunters">Deal Hunters</a>
+        <a href="#agents">Agents &amp; Sellers</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <div class="hero" id="top">
+    <div class="wrap">
+      <h1>We buy real estate <em>on terms</em> — and we close.</h1>
+      <p>RED Sauce REI is a Texas-based investment team that buys residential and commercial property with creative, seller-friendly financing. Flexible structures, straight answers, and offers built around what the seller actually needs.</p>
+      <div class="cta-row sans">
+        <a class="btn btn-red" href="#hunters">Become a Deal Hunter</a>
+        <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="kicker sans">What We Do</div>
+    <h2>Deals that work when a cash offer doesn't.</h2>
+    <p class="lead">Most buyers can only say one thing: a lower price, in cash. We structure offers on terms — seller financing and other creative structures — so the seller can get their number and we can make the deal make sense. That opens up properties other buyers walk away from: long days on market, no equity, unique situations.</p>
+    <div class="cards sans">
+      <div class="card"><h3>🤝 Seller-friendly terms</h3><p>Offers built around the seller's real goal — their price, their timeline, monthly income if that serves them better than a lump sum.</p></div>
+      <div class="card"><h3>📊 Real underwriting</h3><p>Every property runs through our in-house underwriting engine before we make an offer. If we say a number, the math behind it is done.</p></div>
+      <div class="card"><h3>🏡 Residential &amp; beyond</h3><p>Single-family, multi-family, and the odd creative opportunity. On-market or off. If the numbers work, we're interested.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="hunters">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="kicker sans">The Deal Hunter Program</div>
+        <h2>Find deals. We do the rest. You get paid.</h2>
+        <p class="lead">Our deal hunters ("birddogs") are everyday people who spot properties and send them our way. You don't need a license, experience, or money — just hustle. We handle the underwriting, the offers, the negotiating, and the closing.</p>
+        <ul class="checks">
+          <li>You get your own underwriting sheet — type in an address, our engine runs the numbers for you.</li>
+          <li>Weekly team calls and live support while you learn.</li>
+          <li>Real training on how we talk to agents and sellers.</li>
+          <li>You get paid when deals you bring in close.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cards sans" style="margin-top:0;grid-template-columns:1fr">
+          <div class="card"><span class="n">1</span><h3>Intro call</h3><p>A short conversation with the team — who you are, how the program works, what to expect.</p></div>
+          <div class="card"><span class="n">2</span><h3>Get your sheet</h3><p>We set you up with your own copy of our underwriting spreadsheet and show you how to use it.</p></div>
+          <div class="card"><span class="n">3</span><h3>Hunt</h3><p>Submit properties. The engine gives a verdict, and the team takes over on the live ones.</p></div>
+          <div class="card"><span class="n">4</span><h3>Get paid</h3><p>When a deal you sourced closes, you're compensated. Simple as that.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agents">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="kicker sans">Agents &amp; Sellers</div>
+        <h2>A buyer worth calling on the listing nobody's moving.</h2>
+        <p class="lead">Got a listing sitting past 70 days? A seller who needs their number, not another lowball? That's exactly the call we want. We move fast on the analysis, we're honest about what we can and can't do, and agents stay protected on every deal we structure.</p>
+      </div>
+      <div class="quotebox">
+        <p><strong>Agents:</strong> bring us the stale listing. We'll tell you quickly whether we're a fit, and if we make an offer, your commission is part of the structure — always.</p>
+        <p style="margin-top:14px"><strong>Sellers:</strong> if you need your price, your payoff handled, or just to be done — tell us the story on the place. Terms can often get you what a cash buyer never will.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker sans" style="color:#ff6a4d">Contact</div>
+    <h2>Let's talk.</h2>
+    <p class="lead">Whether you want to hunt deals with us, you've got a property, or you're an agent with a listing that needs a different kind of buyer — reach out and we'll get back to you fast.</p>
+    <p style="margin-top:26px"><a class="mail sans" href="mailto:drew@redsaucerei.com">drew@redsaucerei.com</a></p>
+    <div class="cta-row sans" style="justify-content:center;margin-top:26px">
+      <a class="btn btn-red" href="mailto:drew@redsaucerei.com?subject=Deal%20Hunter%20—%20I%27m%20interested">I want to be a Deal Hunter</a>
+      <a class="btn btn-ghost" href="mailto:drew@redsaucerei.com?subject=Property%20for%20RED%20Sauce%20REI">I have a property</a>
+    </div>
+  </div>
+</section>
+
+<footer class="sans">
+  <div class="wrap">
+    <p>© 2026 RED Sauce REI · <a href="mailto:drew@redsaucerei.com">drew@redsaucerei.com</a></p>
+    <p style="margin-top:6px">RED Sauce REI is a real estate investment company. We are not a brokerage and this site is not an offer of securities, legal, or financial advice.</p>
+  </div>
+</footer>
+</body>
+</html>
