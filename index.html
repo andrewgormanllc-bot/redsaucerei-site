@@ -67,6 +67,16 @@
   .contact{background:var(--ink);color:var(--paper);text-align:center}
   .contact .lead{margin-left:auto;margin-right:auto;color:#cfc4ba}
   .contact a.mail{color:#ff6a4d;font-weight:700;text-decoration:none;font-size:1.2rem}
+  .leadform{max-width:560px;margin:36px auto 0;text-align:left}
+  .leadform label{display:block;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:#cfc4ba;margin:16px 0 6px}
+  .leadform input,.leadform select,.leadform textarea{width:100%;padding:13px 14px;border-radius:6px;border:1px solid #4a3d34;background:#2a211b;color:var(--paper);font-size:1rem;font-family:inherit}
+  .leadform input:focus,.leadform select:focus,.leadform textarea:focus{outline:2px solid var(--red);border-color:var(--red)}
+  .leadform textarea{min-height:110px;resize:vertical}
+  .leadform button{margin-top:22px;width:100%;padding:15px;border:none;border-radius:6px;background:var(--red);color:#fff;font-size:1.05rem;font-weight:800;cursor:pointer;transition:background .12s}
+  .leadform button:hover{background:var(--red-dark)}
+  .leadform .fineprint{margin-top:12px;font-size:.8rem;color:#8a7a6e;text-align:center}
+  .thanks-note{max-width:560px;margin:30px auto 0;background:#243b24;border:1px solid #3c6b3c;color:#cfe8cf;border-radius:8px;padding:18px;display:none}
+  .thanks-note:target{display:block}
   footer{background:#120d0a;color:#8a7a6e;padding:26px 0;font-size:.85rem;text-align:center}
   footer a{color:#b0a195;text-decoration:none}
 </style>
@@ -161,11 +171,30 @@
     <div class="kicker sans" style="color:#ff6a4d">Contact</div>
     <h2>Let's talk.</h2>
     <p class="lead">Whether you want to hunt deals with us, you've got a property, or you're an agent with a listing that needs a different kind of buyer — reach out and we'll get back to you fast.</p>
-    <p style="margin-top:26px"><a class="mail sans" href="mailto:drew@redsaucerei.com">drew@redsaucerei.com</a></p>
-    <div class="cta-row sans" style="justify-content:center;margin-top:26px">
-      <a class="btn btn-red" href="mailto:drew@redsaucerei.com?subject=Deal%20Hunter%20—%20I%27m%20interested">I want to be a Deal Hunter</a>
-      <a class="btn btn-ghost" href="mailto:drew@redsaucerei.com?subject=Property%20for%20RED%20Sauce%20REI">I have a property</a>
-    </div>
+    <div id="thanks" class="thanks-note sans"><strong>Got it — you're in the pipeline!</strong> We read every message and we'll get back to you fast. 🤠</div>
+    <form class="leadform sans" action="https://formsubmit.co/drew@redsaucerei.com" method="POST">
+      <input type="hidden" name="_subject" value="🌐 New lead from redsaucerei.com">
+      <input type="hidden" name="_next" value="https://redsaucerei.com/#thanks">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      <label for="lf-name">Name *</label>
+      <input id="lf-name" type="text" name="name" required autocomplete="name">
+      <label for="lf-phone">Phone *</label>
+      <input id="lf-phone" type="tel" name="phone" required autocomplete="tel">
+      <label for="lf-email">Email</label>
+      <input id="lf-email" type="email" name="email" autocomplete="email">
+      <label for="lf-int">I'm reaching out because…</label>
+      <select id="lf-int" name="interest">
+        <option>I want to be a Deal Hunter</option>
+        <option>I have a property to sell</option>
+        <option>I'm an agent with a listing</option>
+        <option>Something else</option>
+      </select>
+      <label for="lf-msg">Tell us a little more</label>
+      <textarea id="lf-msg" name="message" placeholder="Property address, your situation, or how you found us…"></textarea>
+      <button type="submit">Send it 🤠</button>
+      <p class="fineprint">Or email us direct: <a href="mailto:drew@redsaucerei.com" style="color:#ff6a4d">drew@redsaucerei.com</a></p>
+    </form>
   </div>
 </section>
 
