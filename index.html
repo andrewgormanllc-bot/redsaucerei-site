@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RED Sauce REI — We Buy Real Estate on Terms</title>
 <meta name="description" content="RED Sauce REI buys residential and commercial real estate with creative, seller-friendly financing. Deal hunters: bring us deals, we underwrite and close, you get paid.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="RED Sauce REI — We Buy Real Estate on Terms">
+<meta property="og:description" content="Creative, seller-friendly financing. Deal hunters: bring us deals, we underwrite and close, you get paid.">
+<meta property="og:image" content="https://redsaucerei.com/logo-badge.jpg">
+<meta property="og:url" content="https://redsaucerei.com/">
 <style>
   :root{
     --red:#c0311a; --red-dark:#8f2413; --ink:#1c1410; --paper:#faf6f2;
@@ -17,8 +22,12 @@
   .wrap{max-width:960px;margin:0 auto;padding:0 24px}
   header{background:var(--ink);color:var(--paper)}
   nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-  .logo{font-weight:800;font-size:1.15rem;letter-spacing:.5px;color:var(--paper);text-decoration:none}
+  .logo{font-weight:800;font-size:1.15rem;letter-spacing:.5px;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:12px}
   .logo span{color:#ff6a4d}
+  .logo img{width:44px;height:44px;border-radius:50%;display:block;box-shadow:0 0 0 2px rgba(255,255,255,.15)}
+  .hero-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  .hero-badge{width:min(300px,30vw);height:auto;border-radius:50%;box-shadow:0 18px 50px rgba(0,0,0,.5),0 0 0 3px rgba(255,255,255,.08)}
+  @media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero-badge{display:none}}
   nav .links a{color:#cfc4ba;text-decoration:none;margin-left:22px;font-size:.92rem}
   nav .links a:hover{color:#fff}
   .hero{background:var(--ink);color:var(--paper);padding:72px 0 84px;position:relative;overflow:hidden}
@@ -61,7 +70,7 @@
 <header>
   <div class="wrap">
     <nav class="sans">
-      <a class="logo" href="#top">RED <span>SAUCE</span> REI</a>
+      <a class="logo" href="#top"><img src="logo-badge.jpg" alt="RED Sauce Enterprises badge">RED <span>SAUCE</span> REI</a>
       <div class="links">
         <a href="#how">How It Works</a>
         <a href="#hunters">Deal Hunters</a>
@@ -72,11 +81,16 @@
   </div>
   <div class="hero" id="top">
     <div class="wrap">
-      <h1>We buy real estate <em>on terms</em> — and we close.</h1>
-      <p>RED Sauce REI is a Texas-based investment team that buys residential and commercial property with creative, seller-friendly financing. Flexible structures, straight answers, and offers built around what the seller actually needs.</p>
-      <div class="cta-row sans">
-        <a class="btn btn-red" href="#hunters">Become a Deal Hunter</a>
-        <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+      <div class="hero-grid">
+        <div>
+          <h1>We buy real estate <em>on terms</em> — and we close.</h1>
+          <p>RED Sauce REI is a Texas-based investment team that buys residential and commercial property with creative, seller-friendly financing. Flexible structures, straight answers, and offers built around what the seller actually needs.</p>
+          <div class="cta-row sans">
+            <a class="btn btn-red" href="#hunters">Become a Deal Hunter</a>
+            <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+          </div>
+        </div>
+        <img class="hero-badge" src="logo-badge.jpg" alt="RED Sauce Enterprises — silver badge logo with a red skyline">
       </div>
     </div>
   </div>
