@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Here — RED Sauce Deal Hunters</title>
+<meta name="description" content="Your step-by-step start guide as a RED Sauce deal hunter: get your sheet, authorize the menu, find your first deal, and know who to call.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --red:#c0311a; --red-dark:#8f2413; --ink:#1c1410; --paper:#faf6f2;
+    --cream:#f3ece4; --muted:#6b5d52; --line:#e2d7cb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px}
+  header{background:var(--ink);color:var(--paper)}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{font-weight:800;font-size:1.15rem;letter-spacing:.5px;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:12px}
+  .logo span{color:#ff6a4d}
+  .logo img{width:44px;height:44px;border-radius:50%;display:block;box-shadow:0 0 0 2px rgba(255,255,255,.15)}
+  nav .links a{color:#cfc4ba;text-decoration:none;margin-left:22px;font-size:.92rem;white-space:nowrap}
+  nav .links a:hover{color:#fff}
+  @media(max-width:680px){
+    nav{flex-direction:column;gap:12px;padding:16px 0}
+    nav .links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px}
+    nav .links a{margin-left:0}
+  }
+  .hero{background:var(--ink);color:var(--paper);padding:60px 0 74px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;bottom:-2px;left:0;right:0;height:50px;background:var(--paper);clip-path:polygon(0 100%,100% 100%,100% 0)}
+  .hero .kicker{color:#ff6a4d}
+  .hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.14;margin-top:10px;max-width:14em}
+  .hero p{margin-top:18px;max-width:34em;font-size:1.12rem;color:#d8cec5}
+  section{padding:56px 0}
+  .kicker{color:var(--red);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+  h2{font-size:clamp(1.4rem,3.2vw,1.9rem);margin-top:8px;line-height:1.2}
+  .lead{margin-top:12px;color:var(--muted);max-width:40em;font-size:1.05rem}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;margin-top:22px;position:relative}
+  .step .n{display:inline-flex;width:46px;height:46px;border-radius:50%;background:var(--red);color:#fff;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .step h3{font-size:1.18rem}
+  .step p{color:var(--muted);font-size:.97rem;margin-top:7px}
+  .step .time{display:inline-block;margin-top:2px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);font-weight:700}
+  .step .btn{margin-top:16px}
+  .btn{display:inline-block;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:700;font-size:.95rem;transition:transform .12s ease, background .12s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark)}
+  .btn-ghost{border:2px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .connector{width:2px;background:var(--line);height:20px;margin:0 auto;margin-left:22px}
+  ul.lib{margin-top:16px;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 24px}
+  ul.lib li{padding-left:26px;position:relative;color:#3d332b;font-size:.95rem}
+  ul.lib li::before{content:"📄";position:absolute;left:0;top:0;font-size:.9rem}
+  .note{margin-top:16px;font-size:.9rem;color:var(--muted);background:var(--cream);border-left:3px solid var(--red);border-radius:0 8px 8px 0;padding:14px 16px}
+  .contact{background:var(--ink);color:var(--paper);text-align:center}
+  .contact .kicker{color:#ff6a4d}
+  .contact .lead{margin:14px auto 0;color:#cfc4ba}
+  .contact a.mail{color:#ff6a4d;font-weight:700;text-decoration:none;font-size:1.15rem}
+  .contact .cta-row{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .contact .btn-ghost{border-color:#5a4c42;color:var(--paper)}
+  .contact .btn-ghost:hover{border-color:#8a7a6e}
+  footer{background:#120d0a;color:#8a7a6e;padding:26px 0;font-size:.85rem;text-align:center}
+  footer a{color:#b0a195;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="sans">
+      <a class="logo" href="/">RED <span>SAUCE</span> REI</a>
+      <div class="links">
+        <a href="/#hunters">Deal Hunters</a>
+        <a href="/#how">How It Works</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <div class="hero">
+    <div class="wrap">
+      <div class="kicker sans">Deal Hunter Start Guide</div>
+      <h1>Welcome to the team. Here's your first week.</h1>
+      <p>Four steps from Day 1 to your first deal in our hands. Do them in order — each one sets up the next. It's built to stack.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+
+    <div class="step">
+      <div class="n sans">1</div>
+      <div>
+        <span class="time sans">Step 1 · Get set up</span>
+        <h3>Get your underwriting sheet</h3>
+        <p>Tell us you're in, and we set you up with your own copy of the RED Sauce underwriting sheet — type in an address and our engine runs the numbers for you. No license, no money, no experience needed.</p>
+        <a class="btn btn-red sans" href="/#contact">I'm in — set me up →</a>
+      </div>
+    </div>
+    <div class="connector"></div>
+
+    <div class="step">
+      <div class="n sans">2</div>
+      <div>
+        <span class="time sans">Step 2 · One-time setup</span>
+        <h3>Authorize your sheet's menu</h3>
+        <p>The first time you open your sheet, Google shows a one-time "unverified app" screen. It looks scary but it's normal — this illustrated guide walks you past it click by click, with pictures. You only do this once.</p>
+        <a class="btn btn-red sans" href="https://script.google.com/macros/s/AKfycbxDJXGQMrL_8IsLfk75cN53y3ob2Dh6gHVTyrqvtU4sBUkSIsUYZhe-pFSm1ZFfqbbjDQ/exec?form=howto" target="_blank" rel="noopener">Open the authorization guide →</a>
+      </div>
+    </div>
+    <div class="connector"></div>
+
+    <div class="step">
+      <div class="n sans">3</div>
+      <div>
+        <span class="time sans">Step 3 · Learn the ropes</span>
+        <h3>Your training library — from Day 1 to your first GO</h3>
+        <p>When you join, your full training library lands in your inbox. Read it in order — it takes you from "what do we even buy?" to walking a real lead through the sheet to a green light. Here's what's inside:</p>
+        <ul class="lib sans">
+          <li>Onboarding Walk-Through — your first week</li>
+          <li>Training Manual — the Buy Box &amp; what we buy</li>
+          <li>Seller Finance — why it's a win for everyone</li>
+          <li>Spreadsheet Manual — how the sheet works</li>
+          <li>Worked Deal Example — a lead, call to GO</li>
+          <li>Agent Call Sheet — what to ask on the phone</li>
+          <li>Objection-Handling Guide — what to say</li>
+          <li>Quick-Reference Card — the desk cheat sheet</li>
+        </ul>
+        <div class="note sans">Already on the team? Your training library is shared to your RED Sauce email — open the <strong>⭐ START HERE</strong> doc and read top to bottom.</div>
+      </div>
+    </div>
+    <div class="connector"></div>
+
+    <div class="step">
+      <div class="n sans">4</div>
+      <div>
+        <span class="time sans">Step 4 · Never get stuck</span>
+        <h3>Who to contact</h3>
+        <p>Stuck on a call, unsure if a property qualifies, or hit a snag in the sheet? Don't guess — reach out. We'd rather answer a quick question than lose a deal.</p>
+        <p><strong>Deals &amp; questions:</strong> <a href="mailto:deals@redsaucerei.com" style="color:var(--red);font-weight:700;text-decoration:none;">deals@redsaucerei.com</a><br>
+        <strong>Fastest answer:</strong> drop it in the RED Sauce Hunters WhatsApp group, or text a partner directly.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kicker sans">Ready?</div>
+    <h2>Let's find some deals.</h2>
+    <p class="lead">Not set up yet? Start with Step 1 — tell us you're in and we'll get your sheet ready.</p>
+    <div class="cta-row sans">
+      <a class="btn btn-red" href="/#contact">Become a Deal Hunter</a>
+      <a class="btn btn-ghost" href="mailto:deals@redsaucerei.com">Email the team</a>
+    </div>
+  </div>
+</section>
+
+<footer class="sans">
+  <div class="wrap">
+    <p>© 2026 RED Sauce REI · <a href="mailto:deals@redsaucerei.com">deals@redsaucerei.com</a> · <a href="/">redsaucerei.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
